@@ -21,34 +21,57 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <!-- ?SCRIPTS -->
+    <script src="./script/nav.js" defer></script>
   </head>
   <body>
     <header>
       <div id="top">
         <div id="logo"><img src="./IMG/logo.png" alt="" /></div>
-        <div id="search">
-          <ion-icon name="search-outline"></ion-icon
-          ><input placeholder="Vyhledávání..." type="text" />
-        </div>
-        <div id="theme-wrap">
-          <button id="theme-btn">
-            <ion-icon name="moon-outline"></ion-icon>
-          </button>
-        </div>
-        <div id="user-info">
-          <span id="user-name">Admin</span>
-          <button id="user-account">
-            <ion-icon name="person-outline"></ion-icon>
-          </button>
+        <div id="user-ux">
+          <div id="search">
+            <ion-icon id="search-icon" name="search"></ion-icon>
+            <input placeholder="Vyhledávání..." type="text" />
+          </div>
+          <div id="theme-wrap">
+            <button id="theme-btn">
+              <ion-icon id="theme-icon" name="moon-outline"></ion-icon>
+            </button>
+          </div>
+          <div id="user-info">
+            <span id="user-name" class="ibm-plex-sans-medium">Admin</span>
+            <button id="user-account">
+              <ion-icon id="user-account-icon" name="person"></ion-icon>
+            </button>
+          </div>
         </div>
       </div>
       <nav>
         <ul>
-          <li><a href="#">Knihovna</a></li>
-          <li><a href="#">Můj seznam</a></li>
-          <li><a href="#">Nastavení</a></li>
+          <li>
+            <a href="#" id="link_library" class="ibm-plex-sans-medium"
+              >Knihovna</a
+            >
+          </li>
+          <li>
+            <a href="#" id="link_list" class="ibm-plex-sans-medium"
+              >Můj seznam</a
+            >
+          </li>
+          <li>
+            <a href="#" id="link_settings" class="ibm-plex-sans-medium"
+              >Nastavení</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
+    <main>
+      <div id="settings">
+        <div></div>
+        <div></div>
+      </div>
+      <div id="main"></div>
+    </main>
   </body>
 </html>
