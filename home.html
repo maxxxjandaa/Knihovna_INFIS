@@ -22,7 +22,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <!-- ?SCRIPTS -->
-    <script src="./script/nav.js" defer></script>
+    <script src="./script/index.js" defer ></script>
   </head>
   <body>
     <header>
@@ -68,10 +68,47 @@
     </header>
     <main>
       <div id="settings">
-        <div></div>
-        <div></div>
+        <div class="wrapper">
+          <div class="popUp" id="filtersPopUp"></div>
+          <div id="icon-wrapper">
+            <img src="./IMG/icon-settings.png" alt="" />
+          </div>
+          <div id="title-wrapper">
+            <h3 class="ibm-plex-sans-semibold" id="sett-title">Filtrování:</h3>
+          </div>
+          <button id="filters" >
+            <ion-icon id="icon-unsew" name="chevron-down-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="wrapper">
+          <div class="popUp" id="ToDoPopUp"></div>
+          <div id="icon-wrapper">
+            <img src="./IMG/icon-todo.png" alt="" />
+          </div>
+          <div id="title-wrapper">
+            <h3 class="ibm-plex-sans-semibold" id="sett-title">To-Do list</h3>
+          </div>
+          <button  id="ToDo">
+            <ion-icon id="icon-unsew" name="chevron-down-outline"></ion-icon>
+          </button>
+        </div>
+        </div>
       </div>
-      <div id="main"></div>
+      <!-- <div id="main-wrap">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div> -->
     </main>
+    
   </body>
 </html>
