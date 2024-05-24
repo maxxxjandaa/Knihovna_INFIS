@@ -68,20 +68,41 @@
     </header>
     <main>
       <div id="settings">
-        <div class="wrapper">
-          <div class="popUp" id="filtersPopUp"></div>
-          <div id="icon-wrapper">
-            <img src="./IMG/icon-settings.png" alt="" />
+        <div class="wrapper" id="set-wrapp">
+          <div id="title-nav">
+            <div id="icon-wrapper">
+              <img src="./IMG/icon-settings.png" alt="" />
+            </div>
+            <div id="title-wrapper">
+              <h3 class="ibm-plex-sans-semibold" id="sett-title">Filtrování:</h3>
+            </div>
+            <button id="filters" >
+              <ion-icon id="icon-unsew" name="chevron-down-outline"></ion-icon>
+            </button>
           </div>
-          <div id="title-wrapper">
-            <h3 class="ibm-plex-sans-semibold" id="sett-title">Filtrování:</h3>
+          <div id="main-content">
+              <div class="item-set">
+                <button class="set-btn"><span class="ibm-plex-sans-medium | btn-name">Proza</span></button>
+                <button class="set-btn"><span class="ibm-plex-sans-medium | btn-name">Poezie</span></button>
+                <button class="set-btn"><span class="ibm-plex-sans-medium | btn-name">Drama</span></button>
+              </div>
+              <div class="item-set">
+                <button class="set-btn"><span class="ibm-plex-sans-medium | btn-name">Česká literatura</span></button>
+                <button class="set-btn"><span class="ibm-plex-sans-medium | btn-name">Zahraniční literatura</span></button>
+                </div>
+              <div class="item-set">
+                <button class="set-btn"><span class="ibm-plex-sans-medium | btn-name">18.století</span></button>
+                <button class="set-btn"><span class="ibm-plex-sans-medium | btn-name">19.století</span></button>
+                <button class="set-btn"><span class="ibm-plex-sans-medium | btn-name">20.století</span></button>
+                <button class="set-btn"><span class="ibm-plex-sans-medium | btn-name">21.století</span></button>
+              </div>
+              <div class="item-set" id="special">
+                <button id="special-btn" class="ibm-plex-sans-semibold">Zobrazit x výsledků</button>
+              </div>
           </div>
-          <button id="filters" >
-            <ion-icon id="icon-unsew" name="chevron-down-outline"></ion-icon>
-          </button>
         </div>
         <div class="wrapper">
-          <div class="popUp" id="ToDoPopUp"></div>
+          
           <div id="icon-wrapper">
             <img src="./IMG/icon-todo.png" alt="" />
           </div>
